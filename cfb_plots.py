@@ -477,7 +477,7 @@ def main(day=None):
     REPLACE_FLAG = True
 
     if SAVE_FLAG:
-        output_directory = r"D:\Connor\Documents\GA 2023\PyProjects\CFBRisk\cfb_artifacts"
+        output_directory = r"D:\Connor\Documents\GA 2023\PyProjects\CFBRiskPy\cfb_artifacts"
         figs_base_dir = Path(output_directory)
         check_dir = figs_base_dir / f"{date.today().isoformat()}"
         # check_dir = figs_base_dir / "2020-04-22"
@@ -640,8 +640,8 @@ $max(sums) = {maxsum:2.3f}$"""
 
 
 if __name__ == "__main__":
-    # 3/2
-    day = 35
+    # 3/3
+    day = 36
 
     # minteam, maxteam, data, dsig_dict = main(day)
     # print(minteam, maxteam)
