@@ -477,7 +477,7 @@ def main(day=None):
     REPLACE_FLAG = True
 
     if SAVE_FLAG:
-        output_directory = r"D:\Connor\Documents\GA 2023\PyProjects\CFBRiskPy\cfb_artifacts"
+        output_directory = Path("./cfb_artifacts")
         figs_base_dir = Path(output_directory)
         check_dir = figs_base_dir / f"{date.today().isoformat()}"
         # check_dir = figs_base_dir / "2020-04-22"
@@ -533,7 +533,7 @@ def main(day=None):
             if team in dsig_dicts[dd]:
                 cumsum_dsig_data[team][dd] = dsig_dicts[dd][team]
 
-    last_roll_day = (datetime.date.today()-datetime.timedelta(days=1))
+    last_roll_day = (datetime.date.today()-datetime.timedelta(days=2))
     if last_roll_day.isoweekday() == 7:
         last_roll_day =(datetime.date.today()-datetime.timedelta(days=2))
     last_roll_iso_date = last_roll_day.isoformat()
@@ -641,7 +641,7 @@ $max(sums) = {maxsum:2.3f}$"""
 
 if __name__ == "__main__":
     # 3/3
-    day = 36
+    day = 37
 
     # minteam, maxteam, data, dsig_dict = main(day)
     # print(minteam, maxteam)
