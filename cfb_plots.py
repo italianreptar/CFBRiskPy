@@ -533,7 +533,7 @@ def main(day=None):
             if team in dsig_dicts[dd]:
                 cumsum_dsig_data[team][dd] = dsig_dicts[dd][team]
 
-    last_roll_day = (datetime.date.today()-datetime.timedelta(days=2))
+    last_roll_day = (datetime.date.today()-datetime.timedelta(days=1))
     if last_roll_day.isoweekday() == 7:
         last_roll_day =(datetime.date.today()-datetime.timedelta(days=2))
     last_roll_iso_date = last_roll_day.isoformat()
@@ -640,8 +640,8 @@ $max(sums) = {maxsum:2.3f}$"""
 
 
 if __name__ == "__main__":
-    # 3/3
-    day = 37
+    # 3/7
+    day = 38
 
     # minteam, maxteam, data, dsig_dict = main(day)
     # print(minteam, maxteam)
