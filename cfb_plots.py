@@ -641,7 +641,7 @@ $max(sums) = {maxsum:2.3f}$"""
 
 if __name__ == "__main__":
     # 3/7
-    day = 38
+    day = 39
 
     # minteam, maxteam, data, dsig_dict = main(day)
     # print(minteam, maxteam)
